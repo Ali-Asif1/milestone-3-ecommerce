@@ -26,7 +26,7 @@ export const Products = ({ products }: Props) => {
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 py-10">
         {products.map((product) => (
           <Link
-            href={{ pathname: "/singleproduct", query: { _id: product?._id } }}
+            href={{ pathname: "/mobile", query: { _id: product?._id } }}
             key={product._id}
           >
             <div className="border-2 border-red-200 rounded-xl shadow-xl hover:border-red-500 duration-300 hover:scale-105 overflow-hidden">
