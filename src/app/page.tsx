@@ -1,4 +1,4 @@
-import { Products } from "./components/Products";
+import { Products } from "../components/Products";
 
 const getData = async () => {
   const response = await fetch("https://jsonserver.reactbd.com/phone");

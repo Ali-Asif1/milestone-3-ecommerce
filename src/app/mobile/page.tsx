@@ -1,7 +1,7 @@
 import { getSingleProduct} from "@/helpers";
 import Image from "next/image";
 
-interface searchType {
+export interface searchType {
   searchParams: { [key: string]: string | string[] | undefined };
 }
 
@@ -13,13 +13,14 @@ const singleProduct = async ({ searchParams }: searchType) => {
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-center px-8 md:px-0 mb-10">
-      <Image
+       <Image
         src={product.image}
         alt="image"
         width={500}
         height={100}
-        className="max-h-screen"
+        className="max-h-screen rounded-xl"
       />
+      
       <div className="space-y-1 text-justify md:space-y-2 md:pr-14 lg:pr-20">
         <p className="font-bold">{product.title}</p>
         <p>
